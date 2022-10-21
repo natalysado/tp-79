@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class JS</title>
+</head>
+<body>
+    <script>
+        class CRectangulo{
+            constructor(altura, base){
+                this.altura = altura;
+                this.base = base;
+            }
+            calcularArea(altura, base){
+                return this.base * this.altura;
+            }
+        }
+
+        const rectangulo1 = new CRectangulo(4, 5);
+        const rectangulo2 = new CRectangulo(5, 8);
+        document.write("El area del rectangulo 1 es de: " + rectangulo1.calcularArea() + "<br>");
+        document.write("El area del rectangulo 2 es de: " + rectangulo2.calcularArea());
+    </script>
+</body>
+</html>
